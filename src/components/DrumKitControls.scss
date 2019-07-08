@@ -1,0 +1,49 @@
+.controls-wrapper {
+  padding: 15px 0 25px 0;
+}
+.control-col-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.power-btn {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 12px 9px;
+  background-color: rgba(206, 66, 87, 0.6);
+  box-shadow: 0 0 3px 2px #c3c3c3;
+}
+.power-icon {
+  color: #b3b3b3;
+}
+.volume-icon {
+  color: rgba(206, 66, 87, 0.6);
+}
+.active {
+  box-shadow: 0 0 3px 1px #39ff14, 0 0 2px 0 #fff, 0 0 3px 0px #ce4257,
+    0 0 6px 1px #39ff14;
+}
+.active .power-icon {
+  color: #39ff14;
+}
+
+.volume-btn {
+  background: transparent;
+  border: none;
+}
+.select-kit select {
+  color: #c3c3c3;
+  padding: 7px 16px;
+  background: rgba(206, 66, 87, 0.6);
+  border-radius: 6px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid rgba(206, 66, 87, 0.6);
+  margin-left: 8px;
+}
+.select-kit option {
+  color: #1b1b1b;
+  font-size: 18px;
+}

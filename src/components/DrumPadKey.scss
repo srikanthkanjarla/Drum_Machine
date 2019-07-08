@@ -1,0 +1,23 @@
+.btn {
+  padding: 15px 25px;
+  height: 60px;
+  width: 80px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  background: linear-gradient(0deg, #482969, #482969);
+  color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 3px 0 #ce4257;
+  text-shadow: 0 0 3px #ce4257, 0 0 5px #ce4257, 0 0 15px #ce4257,
+    0 0 25px #ce4257;
+}
+
+.btn:active {
+  color: #39ff14;
+  box-shadow: 0 0 3px 1px #39ff14, 0 0 2px 0 #fff, 0 0 3px 0px #ce4257,
+    0 0 6px 1px #39ff14;
+  text-shadow: none;
+}
