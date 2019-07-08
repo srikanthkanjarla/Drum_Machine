@@ -8,19 +8,19 @@ const DrumKitControls = props => {
 
   return (
     <div className="controls-wrapper">
-      <div className="control-col-1">
-        <div>
+      <div className="control-row">
+        <div className="control-col-1">
           <button type="button" className={`power-btn ${power ? 'active' : ''}`} onClick={() => setPower(!power)}>
             <FontAwesome name="power-off" size="2x" className="power-icon fa-fw" />
           </button>
         </div>
-        <div className="select-kit">
+        <div className="control-col-2 select-kit">
           <select>
             <option>Piano</option>
             <option>Heater</option>
           </select>
         </div>
-        <div>
+        <div className="control-col-3">
           <button type="button" className="volume-btn">
             <span>
               <FontAwesome size="2x" name="volume-up" className="volume-icon fa-fw" />

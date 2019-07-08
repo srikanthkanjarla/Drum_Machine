@@ -1,10 +1,19 @@
 .controls-wrapper {
   padding: 15px 0 25px 0;
 }
-.control-col-1 {
+.control-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.control-col-1 {
+  flex: 1;
+}
+.control-col-2 {
+  flex: 2;
+}
+.control-col-3 {
+  flex: 3;
 }
 
 .power-btn {
@@ -33,6 +42,9 @@
   background: transparent;
   border: none;
 }
+input#start {
+  width: 65%;
+}
 .select-kit select {
   color: #c3c3c3;
   padding: 7px 16px;
@@ -41,7 +53,7 @@
   font-size: 18px;
   outline: none;
   border: 1px solid rgba(206, 66, 87, 0.6);
-  margin-left: 8px;
+  margin-left: 16px;
 }
 .select-kit option {
   color: #1b1b1b;
