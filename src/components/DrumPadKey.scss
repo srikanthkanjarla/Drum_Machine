@@ -15,7 +15,8 @@
     0 0 25px #ce4257;
 }
 
-.btn:active {
+.btn:active,
+.active-key {
   color: #39ff14;
   box-shadow: 0 0 3px 1px #39ff14, 0 0 2px 0 #fff, 0 0 3px 0px #ce4257,
     0 0 6px 1px #39ff14;
