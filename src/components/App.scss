@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Coming+Soon|Londrina+Outline&display=swap");
 body {
   margin: 0;
   padding: 0;
 }
 .app {
   background-color: #482969;
-
   min-height: 100vh;
   width: 100vw;
   text-align: center;
@@ -29,5 +28,8 @@ body {
     padding: 30px 7px 0 7px;
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.1);
     border-radius: 6px;
+  }
+  .audio-track {
+    opacity: 0;
   }
 }

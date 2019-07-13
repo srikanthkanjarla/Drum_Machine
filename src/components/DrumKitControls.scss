@@ -20,7 +20,7 @@
   border-radius: 50%;
   border: none;
   outline: none;
-  padding: 12px 9px;
+  padding: 7.5px 4px;
   background-color: rgba(206, 66, 87, 0.6);
   box-shadow: 0 0 3px 2px #c3c3c3;
 }
@@ -32,7 +32,7 @@
 }
 .active {
   box-shadow: 0 0 3px 1px #39ff14, 0 0 2px 0 #fff, 0 0 3px 0px #ce4257,
-    0 0 6px 1px #39ff14;
+    0 0 6px 1px #39ff14, 0 0 9px 0 #39ff14;
 }
 .active .power-icon {
   color: #39ff14;
@@ -41,8 +41,9 @@
 .volume-btn {
   background: transparent;
   border: none;
+  outline: none;
 }
-input#start {
+input#volume {
   width: 65%;
 }
 .select-kit select {

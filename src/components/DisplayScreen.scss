@@ -6,5 +6,12 @@
   box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   width: 70%;
+  min-height: 32px;
   margin: 0 auto;
+}
+
+.display p {
+  margin: 0;
+  font-family: "Coming Soon", cursive;
+  font-weight: bold;
 }
