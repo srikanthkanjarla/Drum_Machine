@@ -5,8 +5,8 @@ import './DisplayScreen.scss';
 const Display = props => {
   const { value } = props;
   return (
-    <div>
-      <p className="display">{value}</p>
+    <div className="display">
+      <p>{value}</p>
     </div>
   );
 };

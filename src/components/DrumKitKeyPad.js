@@ -1,21 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import DrumPadKey from './DrumPadKey';
 import './DrumKitKeyPad.scss';
 
-const KeyPad = () => {
+const KeyPad = props => {
+  const drumPadKeys = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'];
+  const { handleClick, activeKey, power } = props;
+
   return (
     <div className="drumkit-key-pad">
-      <DrumPadKey label="a" />
-      <DrumPadKey label="s" />
-      <DrumPadKey label="d" />
-      <DrumPadKey label="f" />
-      <DrumPadKey label="g" />
-      <DrumPadKey label="h" />
-      <DrumPadKey label="j" />
-      <DrumPadKey label="k" />
-      <DrumPadKey label="l" />
+      {drumPadKeys.map(key => {
+        return (
+          <DrumPadKey
+            label={key}
+            key={key}
+            handleClick={handleClick}
+            style={`${key === activeKey ? 'active-key' : ''}`}
+            disable={!power}
+          />
+        );
+      })}
     </div>
   );
 };
 
+KeyPad.propTypes = {
+  activeKey: PropTypes.string.isRequired,
+  power: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 export default KeyPad;
